@@ -1,0 +1,104 @@
+/* mulish-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/mulish-v12-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* mulish-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/mulish-v12-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* mulish-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/mulish-v12-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* mulish end */
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;800;900&display=swap);
+
+/* fonts end */
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* COLOR */
+  --sidebar-bg-color: #363740;
+  --white-color: #ffffff;
+  --green-color: #10cd45;
+  --pale-grey-color: #eef2f5;
+  --light-grey-color: #c5c7cd;
+  --light-green-color: #00ca39;
+  --pink-color: #e44067;
+  --text-dark-color: #414141;
+  --text-light-color: #a4a6b3;
+  --text-black-color: #000000;
+  --card-hover-bg-color: #3751ff;
+  --dashbord-menu-hover-color: #9fa2b4;
+  --red-color: #f12b2c;
+  --pale-green-color: #29cc97;
+  --yellow-color: #fec400;
+  --main-text-color: #252733;
+  /* FONTS */
+  --main-font: "Lato", sans-serif;
+  --dashbord-menu-link-font: "Mulish", sans-serif;
+}
+*:focus {
+  outline: 2px dotted var(--green-color);
+  outline-offset: 3px;
+}
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+/* a:hover {
+  color: ;
+} */
+ul,
+ol {
+  list-style: none;
+}
+body {
+  font-size: 1.4rem;
+  font-family: var(--main-font);
+  color: var(--main-text-color);
+  line-height: 1.42;
+  font-weight: 600;
+  height: 100%;
+}
+img {
+  display: flex;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 3rem;
+}
