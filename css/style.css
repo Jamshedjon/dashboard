@@ -8,10 +8,10 @@
   --light-green-color: #00ca39;
   --pink-color: #e44067;
   --text-dark-color: #414141;
-  --text-light-color: #a4a6b3;
+  --text-light-color: #dde2ff;
   --text-black-color: #000000;
   --card-hover-bg-color: #3751ff;
-  --dashbord-menu-hover-color: #9fa2b4;
+  --dashbord-menu-hover-color: rgba(159, 162, 180, 8%);
   --red-color: #f12b2c;
   --pale-green-color: #29cc97;
   --yellow-color: #fec400;
@@ -19,6 +19,7 @@
   /* FONTS */
   --main-font: "Lato", sans-serif;
   --dashbord-menu-link-font: "Mulish", sans-serif;
+  --dashboard-nav-border-bottom: #dfe0eb;
 }
 .wrapper {
   display: flex;
@@ -31,6 +32,23 @@
   width: 100%;
   max-width: 255px;
 }
+.sidebar__logo-link {
+}
+.sidebar__logo {
+}
+.sitenav {
+}
+.sitenav__list {
+}
+.sitenav__item {
+}
+.sitenav__a-link {
+}
+.sitenav__link--icon {
+}
+.sitenav__link--text {
+}
+/* sidebar end */
 .main {
   background-color: var(--green-color);
   width: 100%;

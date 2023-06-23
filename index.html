@@ -7,7 +7,7 @@
     <title>Dashboard</title>
     <link
       rel="shortcut icon"
-      href="./images/svg/site-logo.svg"
+      href="./images/svg/site-logo-icon.svg"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./css/global.css" />
@@ -18,7 +18,68 @@
   <body>
     <div class="wrapper container">
       <div class="sidebar">
-        <h1>Sidebar</h1>
+        <a href="#" class="sidebar__logo-link">
+          <img src="./images/svg/site-logo.svg" alt="" class="sidebar__logo" />
+        </a>
+        <nav class="sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a href="" class="sitenav__a-link">
+                <img
+                  src="./images/svg/overview-icon.svg"
+                  alt=""
+                  class="sitenav__link--icon"
+                />
+                <span class="sitenav__link--text">Overview</span>
+              </a>
+            </li>
+            <li class="sitenav__item">
+              <a href="" class="sitenav__a-link"
+                ><img
+                  src="./images/svg/tickets-icon.svg"
+                  alt=""
+                  class="sitenav__link--icon"
+                /><span class="sitenav__link--text">Tickets</span></a
+              >
+            </li>
+            <li class="sitenav__item">
+              <a href="" class="sitenav__a-link"
+                ><img
+                  src="./images/svg/ideas-icon.svg"
+                  alt=""
+                  class="sitenav__link--icon"
+                /><span class="sitenav__link--text">Ideas</span></a
+              >
+            </li>
+            <li class="sitenav__item">
+              <a href="" class="sitenav__a-link"
+                ><img
+                  src="./images/svg/contact-icon.svg"
+                  alt=""
+                  class="sitenav__link--icon"
+                /><span class="sitenav__link--text">Contacts</span></a
+              >
+            </li>
+            <li class="sitenav__item">
+              <a href="" class="sitenav__a-link"
+                ><img
+                  src="./images/svg/agent-icon.svg"
+                  alt=""
+                  class="sitenav__link--icon"
+                /><span class="sitenav__link--text">Agents</span></a
+              >
+            </li>
+            <li class="sitenav__item">
+              <a href="" class="sitenav__a-link"
+                ><img
+                  src="./images/svg/articles-icon.svg"
+                  alt=""
+                  class="sitenav__link--icon"
+                /><span class="sitenav__link--text">Articles</span></a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
       <div class="main">Main part</div>
     </div>
