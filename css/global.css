@@ -55,6 +55,7 @@
   --main-font: "Lato", sans-serif;
   --dashbord-menu-link-font: "Mulish", sans-serif;
   --dashboard-nav-border-bottom: #dfe0eb;
+  --dashboard-hover-color: #9fa2b4;
 }
 *:focus {
   outline: 2px dotted var(--green-color);
@@ -101,4 +102,8 @@ h6 {
   max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
+}
+.sidebar-active {
+  background: var(--dashboard-hover-color);
+  border-left: var(--text-light-color);
 }

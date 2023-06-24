@@ -16,6 +16,8 @@
   --pale-green-color: #29cc97;
   --yellow-color: #fec400;
   --main-text-color: #252733;
+  --sidebar-bottom-color: #a4a6b3;
+  --sidebar-hover-bg: #9fa2b4;
   /* FONTS */
   --main-font: "Lato", sans-serif;
   --dashbord-menu-link-font: "Mulish", sans-serif;
@@ -27,29 +29,211 @@
 }
 
 .sidebar {
+  position: relative;
   background-color: var(--sidebar-bg-color);
   color: var(--white-color);
   width: 100%;
   max-width: 255px;
+  height: 100%;
+  min-height: 1100px;
 }
 .sidebar__logo-link {
+  margin: 3.6rem auto 5.34rem 2.3rem;
 }
 .sidebar__logo {
 }
 .sitenav {
+  margin-bottom: 1.6rem;
 }
 .sitenav__list {
 }
 .sitenav__item {
+  padding: 1.8rem 0;
+  padding-left: 3.1rem;
+}
+.sitenav__item:hover {
+  border-left: 3px solid var(--text-light-color);
+  background-color: var(--dashbord-menu-hover-color);
+}
+
+.sitenav__item-wrapper {
+  display: flex;
+  gap: 2.4rem;
 }
 .sitenav__a-link {
 }
 .sitenav__link--icon {
+  width: 1.6rem;
+  height: 1.6rem;
 }
 .sitenav__link--text {
+  color: #a4a6b3;
+
+  font-size: 1.6rem;
+  font-family: var(--dashbord-menu-link-font);
+}
+hr {
+  width: 100%;
+  border: 1px solid #9fa2b4;
+}
+.sidebar__bottom {
+  margin-left: 4rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.change-mode {
+  margin-bottom: 2.4rem;
+}
+.change-mode__link {
+  display: flex;
+  align-items: center;
+}
+.change-mode--icon {
+  margin-right: 1.8rem;
+}
+.change-mode--text {
+  font-size: 1.6rem;
+  font-family: var(--main-font);
+  color: var(--sidebar-bottom-color);
+}
+.logout {
+  margin-bottom: 3.2rem;
+}
+.logout__link {
+  display: flex;
+  align-items: center;
+}
+.logout--icon {
+  margin-right: 1.8rem;
+}
+.logout--text {
+  font-size: 1.6rem;
+  font-family: var(--main-font);
+
+  color: var(--sidebar-bottom-color);
 }
 /* sidebar end */
 .main {
-  background-color: var(--green-color);
   width: 100%;
+  margin-right: 3.7rem;
+  margin-left: 2.8rem;
+}
+.site__owner-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3.1rem;
+  margin-bottom: 5.3rem;
+}
+.overview-btn__wrapper {
+  display: flex;
+  align-items: center;
+}
+.owner-list__icon-link {
+}
+.owner-list__icon {
+}
+.owner-list__jones-link {
+  display: flex;
+  align-items: center;
+}
+.owner-name {
+  margin-right: 1.4rem;
+  color: var(--main-text-color);
+  font-family: var(--dashbord-menu-link-font);
+}
+.owner-img {
+}
+.site-overview-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6.46rem;
+}
+.site-overview-text {
+  color: var(--text-black-color);
+  font-size: 3.9rem;
+  font-family: var(--main-font);
+}
+.three-dot-icon {
+  margin-right: 3.2rem;
+}
+.add-button {
+  padding: 0.8rem 1.85rem 0.8rem 1.85rem;
+  border-radius: 0.5rem;
+  background: var(--green-color);
+  color: var(--white-color);
+  font-family: var(--main-font);
+  font-weight: 700;
+}
+.person-list__wrapper {
+}
+.person-list__top {
+  display: flex;
+  margin-bottom: 2.03rem;
+
+  color: #878787;
+}
+.person-list__top-text--owner {
+  margin-right: 28.8rem;
+}
+.person-list__top-text--date {
+  margin-right: 17.5rem;
+}
+.person-list__top-text--profits {
+  margin-right: 17.9rem;
+}
+.person-list__top-text--losses {
+  margin-right: 15.5rem;
+}
+.person-list__top-text--phone {
+}
+
+.person-list {
+  font-family: var(--main-font);
+}
+.person-list__item {
+  display: flex;
+  padding: 1.54rem 1.79rem 1.6rem 1.94rem;
+  align-items: center;
+}
+.person-list__item-bg {
+  background: var(--pale-grey-color);
+
+  display: flex;
+  align-items: center;
+  padding: 1.54rem 1.79rem 1.6rem 1.94rem;
+}
+.person-list--link {
+  display: flex;
+  align-items: center;
+  width: 20rem;
+  margin-right: 11.5rem;
+}
+.person-img {
+  margin-right: 2.4rem;
+  width: 3.64rem;
+  height: 3.61rem;
+}
+.person-name {
+  font-family: var(--main-font);
+  font-weight: 500;
+  color: var(--text-dark-color);
+}
+.end-data {
+  margin-right: 17.3rem;
+  width: 5.7rem;
+}
+.profits {
+  margin-right: 17.3rem;
+  color: var(--light-green-color);
+}
+.losses {
+  margin-right: 15.2rem;
+  color: var(--pink-color);
+}
+.phone-number {
+  color: var(--text-dark-color);
 }
